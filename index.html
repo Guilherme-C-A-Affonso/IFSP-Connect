@@ -11,7 +11,7 @@
 <body>
     <header>
         <!-- Conteúdo principal do projeto -->
-        <h1>IFSP Connect</h1>
+        <h1 id="principal">IFSP Connect</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,17 +25,17 @@
         </nav>
     </header>
     <main>
-        <section id="info">
+        <section class="card">
             <h2>Projeto de Desenvolvimento Front-End</h2>
-            <p><strong>Aluno:</strong>Guilherme Correia de Alencar Affonso</p>
-            <p><strong>Curso:</strong>Engenharia da Computação</p>
+            <p><strong>Aluno:</strong> Guilherme Correia de Alencar Affonso</p>
+            <p><strong>Curso:</strong> Engenharia da Computação</p>
             <p>
                 <strong>Objetivo do sistema:</strong>
                 Criar um portal acadêmico para reunir informações importantes
                 para estudantes, professores e visitantes.
             </p>
         </section>
-        <section>
+        <section class="card">
             <h2>Sobre o IFSP Connect</h2>
             <p>
                 O IFSP Connect é um projeto desenvolvido ao longo da disciplina
@@ -53,20 +53,22 @@
                 completa, organizada e interativa.
             </p>
         </section>
-        <section>
-            <img src="/imagens/ifsp-guarulhos.jpg" alt="IFSP Campus Guarulhos" height="200px">
-            <br all>
-            <hr>
-            <h2>Vídeo Institucional</h2>
-            <video controls width="500">
-                <source src="/video/video-institucional.mp4" type="video/mp4">
-            </video>
-            <hr>
-            <h2>Podcast da Instituição</h2>
-            <audio controls>
-                <source src="/audio/podcast.mp3" type="audio/mpeg">
-            </audio>
-            <hr>
+        <section id="multimidia" class="card">
+            <div id="carrossel">
+                <img src="/imagens/ifsp-guarulhos.jpg" alt="IFSP Campus Guarulhos" height="200px">
+            </div>
+            <div>
+                <h2>Vídeo Institucional</h2>
+                <video controls width="500">
+                    <source src="/video/video-institucional.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div>
+                <h2>Podcast da Instituição</h2>
+                <audio controls>
+                    <source src="/audio/podcast.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         </section>
         <section>
             <h2>Sobre os Cursos</h2>
@@ -94,8 +96,7 @@
             </table>
             <br>
         </section>
-        <section>
-            <hr>
+        <section class="card">
             <h1>Bacharelado em Engenharia de Computação</h1>
             <h2>Sobre o Curso</h2>
             <p>
@@ -124,9 +125,6 @@
             <p>Por fim, o Bacharel em Engenharia de Computação pode requerer seu registro profissional nos Conselhos
                 Regionais
                 de Engenharia e Agronomia – CREA.</p>
-            <hr>
-        </section>
-        <section>
             <h2>Mais Informações</h2>
             <p>
                 Câmpus: Guarulhos<br>
@@ -135,12 +133,10 @@
                 Qtd de Semestres: 10<br>
                 Eixo Tecnológico: Informação e Comunicação
             </p>
-            <hr>
         </section>
     </main>
     <footer>
         <p align="center">Guilherme Correia de Alencar Affonso - 2026</p>
-        <hr>
     </footer>
 </body>
 
