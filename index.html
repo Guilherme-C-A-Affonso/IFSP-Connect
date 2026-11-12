@@ -6,6 +6,7 @@
     <title>IFSP Connect</title>
     <link rel="icon" type="image/png" href="imagens/favicon.jpg">
     <link rel="stylesheet" href="css/estilo.css">
+    <script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -116,27 +117,39 @@
         <section id="multimidia" class="card">
             <h1>Multimídia</h1>
             <h2>Imagens</h2>
-            <div id="carrossel">
-                <div class="seta" id="esquerda">←</div>
-                <div class="img">
+            <div id="carrossel" class="card">
+                <div class="seta" id="esquerda" onclick="girarCarrossel(-1)">←</div>
+                <div class="img" id="carrossel-img">
                     <img src="/imagens/ifsp-guarulhos.jpg" alt="IFSP Campus Guarulhos">
                 </div>
-                <div class="seta" id="direita">→</div>
+                <div class="seta" id="direita" onclick="girarCarrossel(1)">→</div>
             </div>
-            <div class="outros">
-                <div>
-                    <h2>Vídeo Institucional</h2>
-                    <video controls width="500">
-                        <source src="/video/video-institucional.mp4" type="video/mp4">
-                    </video>
+            <div class="outros" style="display: none;">
+                <div id="videos" class="card">
+                    <h2>Vídeos Institucionais</h2>
+                    <div id="video-container">
+                        <video controls>
+                            <source src="/video/video-institucional.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="/video/video-institucional.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="/video/video-institucional.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="/video/video-institucional.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
-                <div>
+                <div id="podcast" class="card">
                     <h2>Podcast da Instituição</h2>
                     <audio controls>
                         <source src="/audio/podcast.mp3" type="audio/mpeg">
                     </audio>
                 </div>
             </div>
+            <div class="btn-expandir" onclick="expandirMultimidia()">Ver mais</div>
         </section>
         <section>
             <h2>Sobre os Cursos</h2>
