@@ -85,15 +85,6 @@ li .atual:active {
     color: var(--secondary-color);
 }
 
-/* #cadastro {
-    background-color: var(--lighter-primary-color);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: black;
-}
-#cadastro:active {
-    background-color: var(--lighter-primary-color);
-} */
 
 #btn-topo {
     position: sticky;
@@ -198,40 +189,12 @@ table {
 th, td {
     padding: 10px;
     border: 1px solid var(--darker-primary-color);
+    overflow: hidden;
 }
 
 th {
     background-color: var(--primary-color);
     color: var(--light);
-}
-
-.btn-voltar {
-    margin: 20px 0;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    background-color: var(--secondary-color);
-}
-
-.btn-voltar a {
-    color: var(--light);
-    text-decoration: none;
-    font-weight: bold;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.btn-voltar:hover {
-    background-color: var(--darker-secondary-color);
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
-}
-
-.btn-voltar:active {
-    background-color: var(--lighter-secondary-color);
 }
 
 #multimidia {
@@ -259,7 +222,7 @@ th {
 
 #carrossel img {
     max-height: 18rem;
-    height: 100%;
+    height: auto;
     width: auto;
     max-width: 100%;
 }
